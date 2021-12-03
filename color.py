@@ -1,7 +1,7 @@
 import cv2
 import numpy as np
 image_hsv= None   # global ;(
-# pixel= (20,60,80) # some stupid default
+pixel= (20,60,80) # some stupid default
 # mouse callback function
 def pick_color(event,x,y,flags,param):
     if event== cv2.EVENT_LBUTTONDOWN:
@@ -14,12 +14,12 @@ def pick_color(event,x,y,flags,param):
         # cv2.imshow("mask",image_mask)
         
 def main():
-    frameWidth = 640
-    frameHeight = 480
+#     frameWidth = 640
+#     frameHeight = 480
     cap = cv2.VideoCapture(0)
-    cap.set(3, frameWidth)
-    cap.set(4, frameHeight)
-    cap.set(10,150)
+#     cap.set(3, frameWidth)
+#     cap.set(4, frameHeight)
+#     cap.set(10,150)
     while cap.isOpened():
         success, image_src = cap.read()
         if success:
