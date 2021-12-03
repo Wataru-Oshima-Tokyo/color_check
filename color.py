@@ -1,7 +1,7 @@
 import cv2
 import numpy as np
 image_hsv= None   # global ;(
-pixel= (20,60,80) # some stupid default
+# pixel= (20,60,80) # some stupid default
 # mouse callback function
 def pick_color(event,x,y,flags,param):
     if event== cv2.EVENT_LBUTTONDOWN:
